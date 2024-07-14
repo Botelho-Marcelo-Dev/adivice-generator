@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    background-color: var(--background-color);
+    font-family: Manrope, Arial;
+    height: 97vh;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px 25px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--advice-card-color);
+    border-radius: 2%;
+    width: 500px;
+    
+}
+
+.advice {
+    color: azure;
+    font-size: 23px;
+    padding: 23px;
+    padding-bottom: 35px;
+}
+
+.advice-number {
+    margin-top: 20px;
+    color: lightgreen;
+    letter-spacing: 2px;
+}
+
+.pEspere {
+    color: azure;
+}
+
+.dice-button {
+    height: 60px;
+    width: 60px;
+    border-radius: 60%;
+    border: none;
+    background-color: var(--advice-dice-color);
+    position: relative;
+    top: 25px;
+}
+
+.dice-button:hover {
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    background-color: rgb(183, 237, 183);
+    box-shadow: 0 0 25px rgb(199, 182, 182);
+}
+
+
+@media (max-width: 576px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--advice-card-color);
+        border-radius: 2%;
+    }
+
+}
